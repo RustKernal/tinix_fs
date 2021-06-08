@@ -52,7 +52,7 @@ pub struct LLongReader(File);
 
 
 
-pub fn open(path : &str) -> File {
+pub fn open(_path : &str) -> File {
     File {handle : 0, pos : 0, size : 1}
 }
 
@@ -135,7 +135,7 @@ impl FileWriter<u8> for ByteWriter {
         ByteWriter(*file)
     }
 
-    fn write(&mut self, data : u8) {
+    fn write(&mut self, _data : u8) {
         
     }
 

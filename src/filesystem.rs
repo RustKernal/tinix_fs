@@ -1,6 +1,3 @@
-use super::flags::*;
-use alloc::vec::Vec;
-use alloc::vec;
 use alloc::string::String;
 
 #[derive(Debug, Clone, Copy)]
@@ -23,7 +20,7 @@ pub struct NullFile;
 
 impl FileIO<u8> for NullFile {
     fn read     (&mut self               ) -> u8 {0xFF}
-    fn write    (&mut self,     item : u8) {}
+    fn write    (&mut self,     _item : u8) {}
 }
 
 pub fn open_file(path : &str) -> Option<FileDescriptor> {

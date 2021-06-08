@@ -1,4 +1,6 @@
 #![no_std]
+#![allow(dead_code, unused_imports)]
+
 
 extern crate alloc;
 

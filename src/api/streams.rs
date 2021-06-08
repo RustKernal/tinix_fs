@@ -33,7 +33,7 @@ impl Stream<u8, ByteReader> for ByteStream {
 }
 
 impl Stream<u8, u8> for NullStream {
-    fn open(reader : u8) -> NullStream {
+    fn open(_reader : u8) -> NullStream {
         NullStream
     }
 
